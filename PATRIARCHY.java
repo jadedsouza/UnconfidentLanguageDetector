@@ -107,14 +107,14 @@ public class PATRIARCHY {
         File file = new File ("replacing.txt");
         Scanner check = new Scanner(file);
         String newSentence = "";
-        while (check.hasNextLine()) {
-            Scanner line = new Scanner(check.nextLine());
+        while (check.hasNextLine()) { 
+            Scanner line = new Scanner(check.nextLine()); //could - would //this could be the thing breaking everything.
+            String badName = "";
             String firstWordNOTScanner = line.next();
-            Scanner firstWord = new Scanner(firstWordNOTScanner);
-            if (firstWordNOTScanner.equalsIgnoreCase(word)) {
-               line.next(); //skips single hyphen
+            if (firstWordNOTScanner.equalsIgnoreCase(word)) { // yes!
+               badName = line.next(); //skips single hyphen // 
                 while(line.hasNext()) {
-                    String badName = line.next();
+                    badName = line.next();
                     newSentence = newSentence + badName;
                 }
             }
@@ -128,12 +128,13 @@ public class PATRIARCHY {
     public static boolean replacingCheck (String word) throws FileNotFoundException {
         File file = new File ("replacing.txt");
         Scanner check = new Scanner(file);
+        
         while (check.hasNextLine()) {
             String checkk = check.next();
             if (checkk.equalsIgnoreCase(word)) {
                 return true;
             }
-            check.nextLine();
+           check.nextLine();
         }
         return false;
     }
@@ -144,8 +145,8 @@ public class PATRIARCHY {
     public static boolean deleteFile (String word) throws FileNotFoundException {
         File file = new File ("delete.txt");
         Scanner delete = new Scanner(file);
-        while (delete.hasNextLine()) {
-            String wordFile2 = delete.nextLine();
+        while (delete.hasNext()) {        
+            String wordFile2 = delete.next();
             if (wordFile2.equalsIgnoreCase(word))
                 return true;
         }
