@@ -164,6 +164,9 @@ public class PATRIARCHY {
         }
     }
     
+    // wow. looked at this a year later and absolutely surprised by how bad the below
+    // code is. i rememeber my head ACHING over this. fixed this way above! :) 
+   
     //originally meant to edit phrases, and not just words. couldn't
     //finish this method in time
     /*public static File finalTouches(File file) {
