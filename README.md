@@ -5,5 +5,5 @@ Put in your email through the sampleText.txt file (or make you own .txt file) an
 <br>
 ## Things I want to complete soon: <br>
 * Need to make a front end for accessibility. Also would avoid all the file creation and complications through .txt vs other files types vs not putting in the file type stuff. <br>
-* Never uploaded it to GitHub, so somehow my replacing and deleting files went missing. Working on the replacing text, delete.txt is done I think. <br>
+* Never uploaded it to GitHub my freshman year, so somehow my replacing and deleting files went missing. Working on the replacing text, delete.txt is done I think. <br>
 * Organize! <br>
