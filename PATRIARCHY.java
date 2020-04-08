@@ -90,7 +90,7 @@ public class PATRIARCHY {
                     outputFile.print("");
                 }
                 else if (replacingCheck(word)) {
-                    outputFile.print(replaced(word) + " ");
+                    outputFile.print(replaced(word));
                 }
                 else {
                     outputFile.print(word + " ");
@@ -115,7 +115,7 @@ public class PATRIARCHY {
                badName = line.next(); //skips single hyphen // 
                 while(line.hasNext()) {
                     badName = line.next();
-                    newSentence = newSentence + badName;
+                    newSentence = newSentence + badName + " ";
                 }
             }
         }
@@ -147,6 +147,7 @@ public class PATRIARCHY {
         Scanner delete = new Scanner(file);
         while (delete.hasNext()) {        
             String wordFile2 = delete.next();
+            word = word.replaceAll("[^a-zA-Z0-9\\s+]", "");
             if (wordFile2.equalsIgnoreCase(word))
                 return true;
         }
