@@ -164,9 +164,6 @@ public class PATRIARCHY {
         }
     }
     
-    // wow. looked at this a year later and absolutely surprised by how bad the below
-    // code is. i rememeber my head ACHING over this. fixed this way above! :) 
-   
     //originally meant to edit phrases, and not just words. couldn't
     //finish this method in time
     /*public static File finalTouches(File file) {
@@ -181,26 +178,21 @@ public class PATRIARCHY {
                     if (line.charAt(i) == ' ') 
                         spaces++;
                 }
-
                 if (spaces >=3) {
                     threeWord = check.next() + " " +
                     check.next() + "  " + check.next();
-
                     if (threeWord.equalsIgnoreCase("I'm no expert")) { 
                         check.print();
                     }
-
                     if (spaces == 4) {
                         threeWord = threeWord + check.next();
                         if (threeWord.equalsIgnoreCase("Does that make sense?") ||
                         threeWord.equalsIgnoreCase("Am I Making Sense?") ||
                         threeWord.equalsIgnoreCase("That makes me worrisome")) {
-
                             if (threeWord.equalsIgnoreCase("Does that make sense?") 
                             || threeWord.equalsIgnoreCase("Am I Making Sense?")) {
                                 check.print("I look forward to hearing your thoughts.");
                             }
-
                             if (threeWord.equalsIgnoreCase("That makes me worrisome")) {
                                 check.print();
                             }
